@@ -6,6 +6,6 @@ WORKDIR /app
 
 COPY target/my-shop-1.0.jar ./app.jar
 
-EXPOSE 8081
+EXPOSE 1234
 # Run the packaged application
 CMD ["java", "-jar", "app.jar"]
