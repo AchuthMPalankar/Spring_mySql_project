@@ -17,8 +17,5 @@ RUN ./mvnw dependency:go-offline
 # Copy the rest of the project files
 COPY src ./src
 
-# Package the application
-RUN ./mvnw package
-
 # Run the packaged application
 CMD ["java", "-jar", "target/my-shop-1.0.jar"]
