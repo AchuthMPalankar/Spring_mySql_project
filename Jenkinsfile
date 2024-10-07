@@ -48,7 +48,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker rm -f mytask'
-                    sh 'docker run -it -d --name mytask -p 8081:80 achuthmpalankar/mytask:latest'
+                    sh 'docker run -it -d --name mytask -p 8081:8080 achuthmpalankar/mytask:latest'
                 }
             }
         }
